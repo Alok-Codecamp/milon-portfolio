@@ -13,6 +13,7 @@ import About from './components/about/About.jsx';
 import Blog from './components/blog/Blog.jsx';
 
 import ErrorPage from './components/errorPage/ErrorPage.jsx';
+import Contact from './components/contact/Contact.jsx'
 
 
 
@@ -43,6 +44,11 @@ const router = createBrowserRouter([
         path:'/about',
         element:<About/>
       },
+      {
+        path:'/contact',
+        element:<Contact/>
+
+      }
     ]
   },
   {
