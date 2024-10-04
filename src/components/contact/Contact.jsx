@@ -1,8 +1,8 @@
 import React from 'react'
-
+import './Contact.css';
 const Contact = () => {
   return (
-    <div className='text-white'>Contact</div>
+    <div className='contact-container text-white'>Contact</div>
   )
 }
 
