@@ -48,14 +48,14 @@ function App() {
   };
 
   return (
-   <>
+   <div className='bg-slate-900'>
      <Home/>
      <Skills/>
      <RecentWork/>
      <Contact/>
      <About/>
      <Blog/>
-     </>
+     </div>
   );
 }
 
