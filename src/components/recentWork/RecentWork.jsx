@@ -2,7 +2,9 @@ import React from 'react'
 import './RecentWork.css'
 const RecentWork = () => {
   return (
-    <div className='RecentWork-container rounded-lg'>RecentWork</div>
+    <div className='RecentWork-container  text-white'>
+      Here show Recent Work
+    </div>
   )
 }
 

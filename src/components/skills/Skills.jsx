@@ -2,7 +2,7 @@ import React from 'react'
 import './Skills.css'
 const Skills = () => {
   return (
-    <div className='skills-container rounded-lg w-full flex items-center justify-between'>
+    <div className='skills-container   w-full flex items-center justify-between'>
       <div className="softwere-expertize
        
        h-5/6
