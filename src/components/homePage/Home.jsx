@@ -40,7 +40,7 @@ const Home = () => {
         </p>
       </div>
       <div className='profile-pic mr-8'>
-        <img src={Milon} alt="" style={{"width":"160em","height":"36em"}} className='rounded-full' />
+        <img src={Milon} alt="" style={{"width":"160em","height":"50em"}} className='rounded-full' />
       </div>
     </div>
   )

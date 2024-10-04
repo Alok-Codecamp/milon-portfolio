@@ -4,12 +4,13 @@ const Skills = () => {
   return (
     <div className='skills-container rounded-lg w-full flex items-center justify-between'>
       <div className="softwere-expertize
-       bg-bg-slate-50
+       
        h-5/6
        w-3/6
        m-8
        rounded-lg
        shadow-lg
+       bg-slate-50
       ">
       <div className="adobe-illustrator">
       ADOBE ILLUSTRATOR
