@@ -1,0 +1,35 @@
+/* import font-family for intro  */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+/* import font for bio */
+@import url('https://fonts.googleapis.com/css2?family=Kay+Pho+Du:wght@400;500;600;700&display=swap');
+
+
+.home-container{
+    background: linear-gradient(rgba(0, 0, 0, 0.85),rgba(0, 0, 0, 0.85)),url('../../assets//Milon.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.intro-name{
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.bio{
+    font-family: "Kay Pho Du", serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: large;
+}
+
+/* .photo-container{
+    background-color: darkslategray;
+    margin-top: 50px;
+    margin-left: 20px;
+    padding: 10px 10px 10px 10px;
+} */
+
