@@ -4,6 +4,7 @@ import Milon from '../../assets/Milon.jpg';
 import { TypeAnimation } from 'react-type-animation';
 const Home = () => {
   return (
+    <>
     <div className='home-container flex items-center h-screen '>
       <div className="intro text-white text-left pl-10">
         <h1 className='intro-name'>
@@ -30,20 +31,26 @@ const Home = () => {
       ]}
       wrapper="span"
       speed={50}
-      style={{ fontSize: '1em', display: 'inline-block' }}
+      style={{ fontSize: '1.2em', display: 'inline-block' }}
       cursor={false}
       
     />
         </h3>
-        <p className='details-text text-left mt-6 '>     
+        <p className='details-text text-left mt-6 text-2xl'>     
            I am a professional graphic designer with more than 5 years of freelance experience. I specialize in logo design and have extensive experience with graphics and illustrations. I embarked on this journey in 2019 and have been creating success stories since then. I promise you quick turnaround times, unlimited revisions, excellent customer service, and 100% original designs! Our 110% satisfaction guaranteed policy reassures you that your success is our success. 
         </p>
+        <div className='contact-button-container'>
+      <button className='contact-button'>Contact Me</button>
+    </div>
       </div>
       <div className='profile-pic mr-8'>
-        <img src={Milon} alt="" style={{"width":"160em","height":"50em"}} className='rounded-full' />
+        <img src={Milon} alt="" style={{"width":"160em","height":"40em"}} className='rounded-full' />
       </div>
+
     </div>
-  )
+   
+    </>
+      )
 }
 
 export default Home

@@ -4,11 +4,6 @@
 /* import font for bio */
 @import url('https://fonts.googleapis.com/css2?family=Kay+Pho+Du:wght@400;500;600;700&display=swap');
 
-
-.home-container{
-   
-}
-
 .intro-name{
     font-family: "Roboto Mono", monospace;
     font-optical-sizing: auto;
@@ -30,3 +25,12 @@
     padding: 10px 10px 10px 10px;
 } */
 
+.contact-button{
+    margin-top: 50px;
+    font-size: 42px;
+    font-weight: 700;
+    background-color: cadetblue;
+    padding: 10px;
+    border-radius: 12px;
+    color: navy;
+}

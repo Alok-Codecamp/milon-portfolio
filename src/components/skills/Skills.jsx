@@ -1,55 +1,62 @@
 import React from 'react'
 import './Skills.css'
+import { CircularProgressbar } from 'react-circular-progressbar';
+import 'react-circular-progressbar/dist/styles.css';
 const Skills = () => {
   return (
-    <div className='skills-container   w-full flex items-center justify-between'>
-      <div className="softwere-expertize
-       
-       h-5/6
-       w-3/6
-       m-8
+    <div className='skills-container mr-10 ml-10 flex items-center justify-between bg-cyan-950'>
+      <div className="softwere-expertise bg-slate-50 p-12
        rounded-lg
        shadow-lg
-       bg-slate-50
-      ">
-      <div className="adobe-illustrator">
-      ADOBE ILLUSTRATOR
-      </div>
+       text-center">
+        <h1 className='text-blue-900 font-extrabold text-4xl'>Softwere Expertise</h1>
+        <div className='redial-progress flex justify-center items-center pl-10 pr-10 pt-28 pb-28'>
+        <div
+  className="radial-progress  text-info border-primary-content  bg-sky-50 border-4  text-center mr-10"
+  style={{ "--value": "70", "--size": "22rem", "--thickness": "1rem" }}
+  role="progressbar">
+  <h1 className='text-3xl'>85%</h1>
+  <p className='text-2xl'>Adobe Illustrator</p>
+</div>
+        <div
+  className="radial-progress  text-info border-primary-content bg-sky-50 border-4  text-center ml-10"
+  style={{ "--value": "70", "--size": "22rem", "--thickness": "1rem" }}
+  role="progressbar">
+  <h1 className='text-3xl'>85%</h1>
+  <p className='text-2xl'>Adobe Photoshop</p>
+</div>
 
-      <div className="adobe-photoshop">
-      ADOBE PHOTOSHOP
-      </div>
+        </div>
+        
       </div>
    <div className="slill-progress 
    bg-slate-50
-       h-5/6
-       w-3/6
-       m-8
-       p-12
-       rounded-xl
+       p-6
+       rounded-lg
        shadow-lg">
-   <div className=''>
-    <span> Logo Designs ➔</span><progress className="progress progress-info w-56 " value={0} max="100"></progress>
+        <h1 className='text-center text-blue-900 font-extrabold text-4xl '>Skill Progress</h1>
+   <div className='logo-design p-6 text-3xl font-extrabold'>
+    <span className=''> Logo Designs ➔</span><progress className="progress progress-info w-96 h-4 ml-4" value={90} max="100"></progress><span>9/10</span>
     </div>
-<div>
- <span> Flyer Designs</span><progress className="progress progress-info w-56" value="50" max="100" ></progress>
+<div className='logo-design p-6 text-3xl font-extrabold'>
+ <span className=''> Flyer Designs</span><progress className="progress progress-info w-96 h-4 ml-4" value="50" max="100" ></progress><span>5/10</span>
 </div>
-<div>
-  <span>T-Shirt Designs ➔ </span><progress className="progress progress-info w-56" value="50" max="100" ></progress>
+<div className='logo-design p-6 text-3xl font-extrabold'>
+  <span className=''>T-Shirt Designs ➔ </span><progress className="progress progress-info w-96 h-4 ml-4" value="50" max="100" ></progress><span>5/10</span>
 </div>
-<div>
-  <span>Brochure Designs ➔ </span><progress className="progress progress-info w-56" value="50" max="100" ></progress>
+<div className='logo-design p-6 text-3xl font-extrabold'>
+  <span className=''>Brochure Designs ➔ </span><progress className="progress progress-info w-96 h-4 ml-4" value="46" max="100" ></progress><span>4/10</span>
 </div>
-<div>
-  <span>Banner / Poster Designs ➔ </span><progress className="progress progress-info w-56" value="50" max="100" ></progress>
+<div className='logo-design p-6 text-3xl font-extrabold'>
+  <span className=''>Banner / Poster Designs ➔ </span><progress className="progress progress-info w-96 h-4 ml-4 " value="55" max="100" ></progress><span>5/10</span>
 </div>
-<div>
-  <span>Business Card Designs ➔ </span><progress className="progress progress-info w-56" value="50" max="100" ></progress>
+<div className='logo-design p-6 text-3xl font-extrabold'>
+  <span className=''>Business Card Designs ➔ </span><progress className="progress progress-info w-96 h-4 ml-4 " value="60" max="100" ></progress><span>6/10</span>
 </div>
-<div>
-  <span>Icon Designs ➔ </span><progress className="progress progress-info w-56" value="50" max="100" ></progress>
+<div className='logo-design p-6 text-3xl font-extrabold'>
+  <span className=''>Icon Designs ➔ </span><progress className="progress progress-info w-96 h-4 ml-4 " value="48" max="100" ></progress><span>4/10</span>
 </div>
-<div>
+<div className='logo-design p-6 text-3xl font-extrabold'>
 
 </div>
    </div>
