@@ -4,7 +4,7 @@ const RecentWork = () => {
   return (
     <>
     <h1 className='text-4xl text-white text-center mt-20 mb-10'>Explore My Recent Work</h1>
-    <div className='RecentWork-container  text-white grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 ml-10 mr-10'>
+    <div className='RecentWork-container  text-white grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 ml-10 mr-10 gap-4'>
       <Card/>
       <Card/>
       <Card/>
