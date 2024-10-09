@@ -4,7 +4,9 @@ import { CircularProgressbar } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
 const Skills = () => {
   return (
-    <div className='skills-container mr-10 ml-10 flex items-center justify-between bg-cyan-950'>
+    <>
+    <h1 className='text-4xl text-white text-center mt-20 mb-10'>Skills & Expertise</h1>
+    <div className='skills-container mr-10 ml-10 flex items-center justify-between bg-cyan-950 mt-10 mb-10'>
       <div className="softwere-expertise bg-slate-50 p-12
        rounded-lg
        shadow-lg
@@ -39,7 +41,7 @@ const Skills = () => {
     <span className=''> Logo Designs ➔</span><progress className="progress progress-info w-96 h-4 ml-4" value={90} max="100"></progress><span>9/10</span>
     </div>
 <div className='logo-design p-6 text-3xl font-extrabold'>
- <span className=''> Flyer Designs</span><progress className="progress progress-info w-96 h-4 ml-4" value="50" max="100" ></progress><span>5/10</span>
+ <span className=''> Flyer Designs ➔</span><progress className="progress progress-info w-96 h-4 ml-4" value="50" max="100" ></progress><span>5/10</span>
 </div>
 <div className='logo-design p-6 text-3xl font-extrabold'>
   <span className=''>T-Shirt Designs ➔ </span><progress className="progress progress-info w-96 h-4 ml-4" value="50" max="100" ></progress><span>5/10</span>
@@ -62,6 +64,7 @@ const Skills = () => {
    </div>
 
     </div>
+    </>
   )
 }
 

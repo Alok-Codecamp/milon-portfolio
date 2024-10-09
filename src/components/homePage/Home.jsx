@@ -5,52 +5,27 @@ import { TypeAnimation } from 'react-type-animation';
 const Home = () => {
   return (
     <>
-    <div className='home-container flex items-center h-screen '>
-      <div className="intro text-white text-left pl-10">
-        <h1 className='intro-name'>
-        <TypeAnimation
-      sequence={[
-        // Same substring at the start will only be typed out once, initially
-        'Hi, I am Milon Kumar Mondol',
-         // wait 1s before replacing "Mice" with "Hamsters"
-        
-      ]}
-      wrapper="span"
-      speed={50}
-      style={{ fontSize: '2.2em', display: 'inline-block' }}
-      cursor={false}
-    />
-        </h1>
-        <h3 className='bio mt-4'>
-        <TypeAnimation
-      sequence={[
-        // Same substring at the start will only be typed out once, initially
-        'Experienced Graphic Designer with 5+ Years',
-         // wait 1s before replacing "Mice" with "Hamsters"
-        
-      ]}
-      wrapper="span"
-      speed={50}
-      style={{ fontSize: '1.2em', display: 'inline-block' }}
-      cursor={false}
-      
-    />
-        </h3>
-        <p className='details-text text-left mt-6 text-2xl'>     
-           I am a professional graphic designer with more than 5 years of freelance experience. I specialize in logo design and have extensive experience with graphics and illustrations. I embarked on this journey in 2019 and have been creating success stories since then. I promise you quick turnaround times, unlimited revisions, excellent customer service, and 100% original designs! Our 110% satisfaction guaranteed policy reassures you that your success is our success. 
-        </p>
-        <div className='contact-button-container'>
-      <button className='contact-button'>Contact Me</button>
-    </div>
-      </div>
-      <div className='profile-pic mr-8'>
-        <img src={Milon} alt="" style={{"width":"160em","height":"40em"}} className='rounded-full' />
+      <div className='home-container flex items-center h-screen '>
+
+        <div className='photo-container'>
+          <img src={Milon} alt="" className='portfolio-pic' />
+        </div>
+        <div className="intro text-white text-left pl-10">
+          <p className='personal-portfolio-text'>PERSONAL PORTFOLIO</p>
+          <h1 className='portfolio-name'>MILON KUMAR <br />MONDOL</h1>
+            <p>I am looking to expand my portfolio while i'm on top and while i'm young</p>
+          <div className='contact-button-container text-white mt-10'>
+          <span>Reach me:</span>
+          <a href=""></a>
+          <a href=""></a>
+          <a href=""></a>
+          </div>
+        </div>
+
       </div>
 
-    </div>
-   
     </>
-      )
+  )
 }
 
 export default Home
