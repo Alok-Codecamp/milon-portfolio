@@ -4,6 +4,8 @@
 /* import font for bio */
 @import url('https://fonts.googleapis.com/css2?family=Kay+Pho+Du:wght@400;500;600;700&display=swap');
 
+
+
 .portfolio-name{
     font-size: 54px;
     font-weight: 700;
@@ -19,7 +21,6 @@
 }
 
 .photo-container{
-    margin-left: 6em;
     margin-right: 6em;
 }
 
