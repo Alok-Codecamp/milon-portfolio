@@ -52,8 +52,9 @@ function App() {
      <Home/>
      <Skills/>
      <RecentWork/>
-     <Contact/>
      <About/>
+     <Contact/>
+
      <Blog/>
      </div>
   );

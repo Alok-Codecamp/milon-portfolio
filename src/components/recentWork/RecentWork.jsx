@@ -1,41 +1,65 @@
-import React from 'react'
-import './RecentWork.css'
+import React, { useEffect, useState } from 'react';
+import './RecentWork.css';
+
 const RecentWork = () => {
-  return (
-    <>
-    <h1 className='text-4xl text-white text-center mt-20 mb-10'>Explore My Recent Work</h1>
-    <div className='RecentWork-container  text-white grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 ml-10 mr-10 gap-4'>
-      <Card/>
-      <Card/>
-      <Card/>
-      <Card/>
-      <Card/>
-      <Card/>
-    </div>
-    </>
-  )
-}
+  const [projects,setProjects] = useState([]);
+  const [loading, setLoading] = useState(false);
+  useEffect(()=>{
+    setLoading(true);
+    fetch('/projects.json')
+    .then(res =>res.json())
+    .then(data =>setProjects(data))
+    .catch(error=>{
+      console.error(error);
+      setLoading(false)
+    })
+    setLoading(false)
+  },[])
 
-export default RecentWork
-
-export const Card = ()=>{
 
   return (
     <>
-    <div className="card glass w-96">
-  <figure>
-    <img
-      src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-      alt="car!" />
-  </figure>
-  <div className="card-body">
-    <h2 className="card-title">Life hack</h2>
-    <p>How to park your car at your garage?</p>
-    <div className="card-actions justify-end">
-      <button className="btn btn-primary">Learn now!</button>
-    </div>
-  </div>
-</div>
+      <h1 className='text-4xl text-white text-center mt-20 mb-10'>Explore My Recent Work</h1>
+      <div className='RecentWork-container text-white grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:ml-8 md:mr-8  gap-4'>
+        {projects.map(project => (
+          <Card key={project.id} project={project} />
+        ))}
+      </div>
     </>
-  )
+  );
 }
+
+export default RecentWork;
+
+export const Card = ({ project }) => {
+  const openModal = (id) => {
+    document.getElementById(`modal_${id}`).showModal();
+  };
+
+  return (
+    <>
+      <div className="card glass">
+        <figure>
+          <img className='h-60' src={project.pic} alt={project.name} />
+        </figure>
+        <div className="card-body">
+          <h2 className="card-title h-10">{project.name}</h2>
+          <div className="card-actions justify-end">
+            <button onClick={() => openModal(project.id)} className="btn btn-info">Learn now!</button>
+          </div>
+        </div>
+      </div>
+
+      {/* Modal for each project */}
+      <dialog id={`modal_${project.id}`} className="modal">
+        <div className="modal-box h-9/12">
+          <form method="dialog">
+            <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+          </form>
+          <h3 className="font-bold text-black text-lg">{project.name}</h3>
+          <img className='w-9/12' src={project.pic} alt={project.name} />
+        </div>
+      </dialog>
+    </>
+  );
+};

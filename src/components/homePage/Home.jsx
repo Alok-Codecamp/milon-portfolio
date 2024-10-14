@@ -5,9 +5,8 @@ import { TypeAnimation } from 'react-type-animation';
 const Home = () => {
   return (
     <>
-      <div className='home-container flex justify-center items-center h-screen '>
-
-        <div className='photo-container'>
+      <div className='home-container md:flex justify-center items-center md:h-screen'>
+        <div className='photo-container md:mr-24'>
           <img src={Milon} alt="" className='portfolio-pic' />
         </div>
         <div className="intro text-white text-left pl-10">
@@ -21,7 +20,6 @@ const Home = () => {
           <a href=""></a>
           </div>
         </div>
-
       </div>
 
     </>

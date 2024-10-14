@@ -1,0 +1,33 @@
+[
+    {
+      "id": 1,
+      "name": "CAN'T BE DENIED",
+      "pic": "/project-pic/project1.png"
+    },
+    {
+      "id": 2,
+      "name": "BACON BULLIES",
+      "pic": "/project-pic/project2.png"
+    },
+    {
+      "id": 3,
+      "name": "ENDLESS OPPORTUNITY TAX SERVICES",
+      "pic": "/project-pic/project3.png"
+    },
+    {
+      "id": 4,
+      "name": "CANABIS COCKTAILS",
+      "pic": "/project-pic/project4.png"
+    },
+    {
+      "id": 5,
+      "name": "BLUEPRINT RESTORATION",
+      "pic": "/project-pic/project5.png"
+    },
+    {
+      "id": 6,
+      "name": "BROWN'S PLUMBING AND HEATING",
+      "pic": "/project-pic/project6.png"
+    }
+  ]
+  
