@@ -4,3 +4,10 @@
     width: 80em;
     margin-left: -8em;
 }
+
+@media only screen and (max-width:640px){
+
+    .about-pic-container{
+        display:none;
+    }
+}

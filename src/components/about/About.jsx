@@ -18,7 +18,7 @@ const About = () => {
           <h4 className='text-lg pt-10'>NO UPFRONT || MULTIPLE REVISIONS || WORKING 24*7 HOURS || 100% JOB SATISFACTION</h4>
         </p>
       </div>
-      <div className='about-pic-container bg-slate-800 pt-8 pb-8'>
+      <div className='about-pic-container  bg-slate-800 pt-8 pb-8'>
         <img src={aboutPic} className='about-pic' alt="" />
       </div>
 
