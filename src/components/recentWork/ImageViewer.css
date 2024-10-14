@@ -22,8 +22,8 @@
   }
   
   .full-screen-image {
-    max-width: 100%; /* Scale image to fit the container */
-    max-height: 100%; /* Scale image to fit the container */
+    max-width:60%; /* Scale image to fit the container */
+    max-height: 60%; /* Scale image to fit the container */
     object-fit: contain; /* Maintain aspect ratio */
   }
   
