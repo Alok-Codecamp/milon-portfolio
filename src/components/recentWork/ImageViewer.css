@@ -1,0 +1,40 @@
+/* ImageViewer.css */
+.image-viewer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: white; /* White background */
+    z-index: 9999;
+    display: flex; /* Enable flexbox */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+  }
+  
+  .image-viewer-content {
+    position: relative;
+    max-width: 90%; /* Maximum width of the content */
+    max-height: 90%; /* Maximum height of the content */
+    display: flex; /* Enable flexbox for centering */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+  }
+  
+  .full-screen-image {
+    max-width: 100%; /* Scale image to fit the container */
+    max-height: 100%; /* Scale image to fit the container */
+    object-fit: contain; /* Maintain aspect ratio */
+  }
+  
+  .close-button {
+    position: absolute; /* Positioning the close button */
+    top: 10px;
+    right: 10px;
+    background: transparent; /* Transparent background */
+    border: none; /* No border */
+    color: black; /* Close button color */
+    font-size: 2rem; /* Font size of close button */
+    cursor: pointer; /* Pointer cursor */
+  }
+  
