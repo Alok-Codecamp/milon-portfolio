@@ -53,9 +53,6 @@ function App() {
      <Skills/>
      <RecentWork/>
      <About/>
-     <Contact/>
-
-     <Blog/>
      </div>
   );
 }
