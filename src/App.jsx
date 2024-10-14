@@ -14,38 +14,6 @@ function App() {
   const navigate = useNavigate();
   const location = useLocation();
 
-  // Navigate when componentsIndex changes
-  useEffect(() => {
-    // Use the latest componentsIndex to navigate
-    navigate(allComponents[componentsIndex]);
-    console.log(componentsIndex);
-    
-  }, [componentsIndex]);
-
-  // Auto-navigation function with setInterval
-  // useEffect(() => {
-  //   const intervalId = setInterval(() => {
-  //     // Using functional update to avoid stale closure
-  //     setComponentsIndex((prevIndex) => 
-  //       prevIndex < allComponents.length - 1 ? prevIndex + 1 : 0
-  //     );
-  //   }, 20000); // Automatically navigate every 4 seconds
-
-  //   // Clear the interval when the component unmounts to avoid memory leaks
-  //   return () => clearInterval(intervalId);
-  // }, []); // Empty dependency array ensures the interval runs only once when the component mounts
-
-  const handleNext = () => {
-    setComponentsIndex((prevIndex) => 
-      prevIndex < allComponents.length - 1 ? prevIndex + 1 : 0
-    );
-  };
-
-  const handlePrevious = () => {
-    setComponentsIndex((prevIndex) => 
-      prevIndex > 0 ? prevIndex - 1 : allComponents.length - 1
-    );
-  };
 
   return (
    <div className='bg-slate-900'>
